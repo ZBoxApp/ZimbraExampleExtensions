@@ -1,4 +1,4 @@
-<project name="ZBoxExtension" default="jar">
+<project name="HttpExtension" default="jar">
 	<property name="zimbra.root.dir" location="/opt/zimbra"></property>
     <property name="common.jars.dir" location="${zimbra.root.dir}/lib/jars"></property>
     <path id="class.path">
@@ -15,6 +15,6 @@
         </javac>
     </target>
     <target name="jar" depends="compile" description="Creates the jar file">
-        <jar manifest="conf/MANIFEST.MF" destfile="dist/ZBoxExtension.jar" basedir="build"></jar>
+        <jar manifest="conf/MANIFEST.MF" destfile="dist/HttpExtension.jar" basedir="build"></jar>
     </target>
 </project>

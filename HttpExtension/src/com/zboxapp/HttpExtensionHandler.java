@@ -9,15 +9,15 @@ import javax.servlet.ServletException;
 import java.io.IOException;
 import com.zimbra.common.service.ServiceException;
 
-public class ZBoxExtensionHandler extends ExtensionHttpHandler {
+public class HttpExtensionHandler extends ExtensionHttpHandler {
   
   public String getPath() {
-	 return super.getPath() + "/chupalo";
+	 return super.getPath() + "/http";
   }
 
   public void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException{
     ServletOutputStream os = resp.getOutputStream();
-    os.print("Rico!!!!");
+    os.print("It Works!!!!");
   }
   
   public void init (ZimbraExtension ext) throws ServiceException {

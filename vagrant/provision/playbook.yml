@@ -23,7 +23,3 @@
     - role: common
     - role: bertvv.bind
     - role: pbruna.zimbradev
-
-  tasks:
-    - name: Make dev zimlet dir
-      file: path=/opt/zimbra/zimlets-deployed/_dev state=directory owner=zimbra group=zimbra
