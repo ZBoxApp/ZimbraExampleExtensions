@@ -40,16 +40,16 @@ $ vagrant ssh
 * `src`, the source code of the extension,
 
 ### Manifest File
-On every example there is a `./conf/MANIFEST.MF` file, where is declared the Extension:
+On every example there is a `./conf/MANIFEST.MF` file, where the extension name is declared:
 
 ```
 Zimbra-Extension-Class: com.zboxapp.HttpExtension
 ```
 
-All this examples belongs to the `com.zboxapp` [package](https://en.wikipedia.org/wiki/Java_package).
+All the examples on this repo belongs to the `com.zboxapp` [package](https://en.wikipedia.org/wiki/Java_package).
 
 ### ANT
-Inside every example there is a `build.xml` file, which contains the magic to compile the extension. The basic estructure of this file is as follows:
+Inside every example there is a `build.xml` file, which contains the magic to compile the extension. The basic content of this file is as follows:
 
 ```xml
 <!-- Name of the Extension -->
@@ -83,4 +83,4 @@ Inside every example there is a `build.xml` file, which contains the magic to co
 
 ## Examples
 
-* [HttpExtension](./HttpExtension), shows how to add a new Endpoint on Zimbra server to process Http request.
+* [HttpExtension](./HttpExtension), shows how to add a new Endpoint on Zimbra server to process a http request.
