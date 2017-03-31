@@ -12,7 +12,7 @@ It Works!!!!
 ## Components
 
 * [./src/com/zboxapp/HttpExtension.java](./src/com/zboxapp/HttpExtension.java), register our extension,
-* [./src/com/zboxapp/HttpExtensionHandler.java](./src/com/zboxapp/HttpExtensionHandler.java), its where the processing of the http request taka places.
+* [./src/com/zboxapp/HttpExtensionHandler.java](./src/com/zboxapp/HttpExtensionHandler.java), its where the processing of the http request take places.
 
 ## Run the Example
 Inside the vagrant vm (`vagrant ssh`):
@@ -34,7 +34,7 @@ $ sudo grep HttpExtension /opt/zimbra/log/mailbox.log
 2017-03-31 15:30:24,405 INFO  [main] [] extensions - Initialized extension HttpExtension: com.zboxapp.HttpExtension@com.zimbra.cs.extension.ZimbraExtensionClassLoader@2c282004
 ```
 
-And now just check if it works
+Check if it works
 
 ```
 $ curl http://localhost:7080/service/extension/HttpExtension/http
