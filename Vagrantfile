@@ -20,14 +20,14 @@ Vagrant.configure(2) do |config|
 
 
   config.vm.provider 'virtualbox' do |v|
-    v.name = 'zimbra-zbox-docs'
+    v.name = 'zimbra-development'
     v.memory = 2048
     v.cpus = 2
   end
 
   config.vm.provider 'parallels' do |v|
     v.update_guest_tools = true
-    v.name = 'zimbra-zbox-docs'
+    v.name = 'zimbra-development'
     v.memory = 2048
     v.cpus = 2
   end

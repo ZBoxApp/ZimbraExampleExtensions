@@ -14,6 +14,9 @@ zimbra_required_packages:
   - sqlite
   - libreoffice
   - libreoffice-headless
+  - "@Development tools"
+  - ant
+  - maven
 
 zimbra_download_url: https://files.zimbra.com/downloads/8.6.0_GA/zcs-8.6.0_GA_1153.RHEL7_64.20141215151110.tgz
 zimbra_file: zcs-8.6.0_GA_1153.RHEL7_64.20141215151110

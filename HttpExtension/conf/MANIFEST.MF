@@ -1,1 +1,1 @@
-Zimbra-Extension-Class: com.zboxapp.ZBoxExtension
+Zimbra-Extension-Class: com.zboxapp.HttpExtension

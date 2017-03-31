@@ -1,11 +1,16 @@
+<!-- Name of the Extension -->
 <project name="HttpExtension" default="jar">
+    <!-- Define a couple of variables (property) -->
 	<property name="zimbra.root.dir" location="/opt/zimbra"></property>
     <property name="common.jars.dir" location="${zimbra.root.dir}/lib/jars"></property>
+    <!-- Set the CLASS PATH: Java libs -->
     <path id="class.path">
+        <!-- Add all the jars to the CLASS PATH -->
         <fileset dir="${common.jars.dir}">
             <include name="**/*.jar"></include>
         </fileset>
     </path>
+    <!-- Compile Taks -->
     <target name="compile" description="Compiles the source code">
         <path id="all.java.path">
             <pathelement location="src"></pathelement>
@@ -14,6 +19,7 @@
             <src refid="all.java.path"></src>
         </javac>
     </target>
+    <!-- Create jar file task -->
     <target name="jar" depends="compile" description="Creates the jar file">
         <jar manifest="conf/MANIFEST.MF" destfile="dist/HttpExtension.jar" basedir="build"></jar>
     </target>

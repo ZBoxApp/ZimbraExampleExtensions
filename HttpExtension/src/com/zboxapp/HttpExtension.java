@@ -6,14 +6,20 @@ import com.zimbra.common.service.ServiceException;
 
 public class HttpExtension implements ZimbraExtension {
 
- public void init() throws ServiceException {
-	ExtensionDispatcherServlet.register(this, new HttpExtensionHandler());
- }
+	// Register the Extension and run all the 
+	// initilization process that we need to do
+	// when the server starts
+	public void init() throws ServiceException {
+		ExtensionDispatcherServlet.register(this, new HttpExtensionHandler());
+	}
 
-  public void destroy() {
-    ExtensionDispatcherServlet.unregister(this);
-  }
+  // All the cleaning operations to do when the server
+  // is stopped
+	public void destroy() {
+		ExtensionDispatcherServlet.unregister(this);
+	}
   
+  // The extension name
   public String getName() {
     return "HttpExtension";
   }
